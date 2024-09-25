@@ -5,9 +5,6 @@
 
 }
 
-/* 
-   */
-
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +22,6 @@ main {
     background-size: cover;
     width: 35%;
     height: 100%;
-    /* background-attachment: fixed; */
     background-position: center;
 }
 
@@ -41,7 +37,6 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 15em;
-    /* border: 1px solid red; */
     padding: .5em;
     background-color: rgba(0, 0, 0 , 0.5);
     opacity: 0.9;
@@ -60,4 +55,17 @@ main {
 
 a {
     color: wheat;
+}
+
+.form-text {
+    max-width: 80ch;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 10em;
+
+}
+
+.form {
+    padding-left: 1.7em;
 }
