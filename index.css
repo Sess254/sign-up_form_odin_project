@@ -5,11 +5,59 @@
 
 }
 
+/* 
+   */
+
 * {
     margin: 0;
     padding: 0;
 }
 
-img {
-    display: block;
+main {
+    display: flex;
+    height: 100vh;
+    font-family: "Roboto", system-ui;
+
+}
+
+.logo-section {
+    background: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    width: 35%;
+    height: 100%;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+.company-logo {
+    font-family: "Caesar Dressing", system-ui;
+    color: white;
+    font-size: 5rem;
+    font-weight: 100;
+    
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15em;
+    /* border: 1px solid red; */
+    padding: .5em;
+    background-color: rgba(0, 0, 0 , 0.5);
+    opacity: 0.9;
+}
+
+
+.logo {
+    width: 5em;
+}
+
+.credit {
+    margin-top: 35em;
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: wheat;
 }
