@@ -69,3 +69,7 @@ a {
 .form {
     padding-left: 1.7em;
 }
+
+.form-container {
+    display: grid;
+}

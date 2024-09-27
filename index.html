@@ -32,6 +32,39 @@
                 <h2>Let's do this!</h2>
             </div>
 
+            <div class="form-container">
+                <form>
+                    <label for="first-name">FIRST NAME</label>
+                    <input 
+                        type="text" 
+                        id="first-name"
+                        placeholder="John"
+                        aria-label="Enter your first name"
+                        required>
+                    <label for="last-name">LAST NAME</label>
+                    <input
+                        type="text"
+                        id="last-name"
+                        placeholder="Doe"
+                        aria-label="Enter your last name"
+                        required>
+                    <label for="email">EMAIL</label>
+                    <input 
+                        type="email"
+                        id="email"
+                        placeholder="example@example.com"
+                        pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+                        required>
+                    <label for="password">PASSWORD</label>
+                    <input 
+                        type="password"
+                        pattern="[a-zA-Z0-9.@_+-]{8,}"
+                        required>
+
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+
         </section>
     </main>
     <footer></footer>
