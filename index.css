@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 main {
@@ -58,18 +59,81 @@ a {
 }
 
 .form-text {
+    padding-left: 1.2em;
+}
+
+.form-text {
     max-width: 80ch;
     display: flex;
     flex-direction: column;
     gap: 2em;
     margin-top: 10em;
-
-}
-
-.form {
-    padding-left: 1.7em;
 }
 
 .form-container {
-    display: grid;
+    margin-top: 2em;
+    
 }
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    padding: 0 1.2em 1em;
+}
+
+
+input {
+    padding: .5em;
+    font-size: .8rem;
+    border-radius: 5px;
+    border: 2px solid #E5E7EB;
+}
+
+label {
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 1em;
+    padding: 1em 3em;
+    background: #596D48;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1.2em;
+}
+
+.btn-container {
+    margin-left: 1.2em;
+    padding: 1.2em 0;
+}
+
+.log-in {
+    color: #596D48;
+    font-weight: bold;
+}
+
+
+.password:valid {
+    border-color: green;
+}
+
+.password:invalid {
+    border-color: red;
+}
+
+
+.hint {
+    color: red;
+    font-size: .9rem;
+}
+

@@ -22,7 +22,7 @@
                 </a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
             </p>
         </section>
-        <section class="form">
+        <section class="form-section">
             <div class="form-text">
                 <h2>This is not a real online service! You know you need somehing like this in your
                     life to help you realize your deepest dreams.
@@ -34,37 +34,70 @@
 
             <div class="form-container">
                 <form>
-                    <label for="first-name">FIRST NAME</label>
-                    <input 
-                        type="text" 
-                        id="first-name"
-                        placeholder="John"
-                        aria-label="Enter your first name"
-                        required>
-                    <label for="last-name">LAST NAME</label>
-                    <input
-                        type="text"
-                        id="last-name"
-                        placeholder="Doe"
-                        aria-label="Enter your last name"
-                        required>
-                    <label for="email">EMAIL</label>
-                    <input 
-                        type="email"
-                        id="email"
-                        placeholder="example@example.com"
-                        pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
-                        required>
-                    <label for="password">PASSWORD</label>
-                    <input 
-                        type="password"
-                        pattern="[a-zA-Z0-9.@_+-]{8,}"
-                        required>
+                    <div class="form-inputs">
+                        <div class="form-row">
+                            <label for="first-name">FIRST NAME</label>
+                            <input 
+                                type="text" 
+                                id="first-name"
+                                placeholder="John"
+                                aria-label="Enter your first name"
+                                required>
+                        </div>
+                        <div class="form-row">
+                            <label for="last-name">LAST NAME</label>
+                            <input
+                            type="text"
+                            id="last-name"
+                            placeholder="Doe"
+                            aria-label="Enter your last name"
+                            required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">EMAIL</label>
+                            <input 
+                                type="email"
+                                id="email"
+                                placeholder="example@example.com"
+                                pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+                                required>
+                        </div>
+                        <div class="form-row">
+                            <label for="number">PHONE NUMBER</label>
+                            <input
+                            type="tel"
+                            id="number"
+                            placeholder="0714223334"
+                            aria-label="Enter your phone number"
+                            required>
+                        </div>
+                        <div class="form-row">
+                            <label for="password">PASSWORD</label>
+                            <input
+                            class="password"
+                            type="password"
+                            title="password must match"
+                            pattern="[a-zA-Z0-9.@_+-]{8,}"
+                            required>
+                            <p class="hint">*Password must match</p>
+                        </div>
+                        <div class="form-row">
+                            <label for="password">CONFIRM PASSWORD</label>
+                            <input
+                            class="password"
+                            type="password"
+                            pattern="[a-zA-Z0-9.@_+-]{8,}"
+                            required>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account? <a href="#" class="log-in">Log In</a> </p>   
+                    </div>
 
-                    <button type="submit">SUBMIT</button>
                 </form>
+                 
             </div>
-
         </section>
     </main>
     <footer></footer>
